@@ -1,0 +1,184 @@
+/* 基本設計 */
+
+/*頁面背景*/
+body {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+/*圖片樣式*/
+img {
+  width: 150px;
+  align-content: center;
+}
+
+/* 首頁標題 */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* 姓名 */
+.focus_name {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* 職稱 */
+.focus_job {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* 聯絡資訊 */
+.focus_info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: auto; /*區塊設定 auto 以應螢幕變化內容*/
+  font-size: 18px;
+}
+
+/*介紹用的清單*/
+.list {
+  display: flex;
+  justify-content: center;
+  /*區塊設定 auto 以應螢幕變化內容*/
+}
+
+/*內容用的區塊*/
+.product {
+  width: 25%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+}
+
+/*圖片用區塊設定*/
+.img_css {
+  width: 25%;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.article {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+
+/* 段落標題 */
+.headline {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  width: 50%;
+  max-width: 50%;
+}
+
+/* 文字內容的格式 */
+.content {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
+  max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
+  font-size: 18px;
+  padding: 10px;
+}
+
+.keyword {
+  color: orange;
+  font-weight: bold;
+}
+
+.desktop_menu {
+  text-align: center;
+  display: block;
+}
+
+.mobile_menu {
+  text-align: center;
+  display: none;
+}
+
+/* 平板設計 */
+@media (max-width: 1100px) {
+  /* 螢幕寬度小於 1100px，套用這區塊的 CSS */
+  img {
+    width: 120px;
+    align-content: center;
+  }
+
+  .list {
+    flex-wrap: wrap;
+  }
+
+  .focus_name {
+    font-size: 24px;
+  }
+
+  /* 職稱 */
+  .focus_job {
+    font-size: 20px;
+  }
+
+  /* 聯絡資訊 */
+  .focus_info {
+    font-size: 16px;
+  }
+
+  .headline {
+    font-size: 20px;
+  }
+
+  /* 文字內容的格式 */
+  .content {
+    font-size: 16px;
+  }
+}
+
+/* 手機設計 */
+@media (max-width: 500px) {
+  /* 螢幕寬度小於 500px，套用這區塊的 CSS */
+  .headline {
+    font-size: 20px;
+  }
+  .product {
+    width: 90%;
+    align-items: center;
+  }
+
+  .focus_info {
+    text-align: center;
+  }
+
+  .desktop_menu {
+    text-align: center;
+    display: none;
+  }
+  .mobile_menu {
+    text-align: center;
+    display: block;
+  }
+}
