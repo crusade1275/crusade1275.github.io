@@ -8,21 +8,21 @@
     <title>Wehelp 申請書</title>
     <base target="_blank" />
     <link rel="icon" href=".\img\fashion_necktie_pin.png" />
-    <link rel="stylesheet" type="text/css" href="index_css.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <h1 class="title">Wehelp 申請書</h1>
     <!-- 第一部分：大頭貼與基本資料 -->
     <div class="main_info">
       <!-- 大頭貼 -->
-      <div class="img_css">
+      <figure class="img_css">
         <img
           class="img_block"
           src="./img/Grover.jpg"
           alt="Grover's 大頭貼"
           width="150px"
         />
-      </div>
+      </figure>
       <!-- 姓名與聯絡資訊 -->
       <div class="focus_background">
         <!-- 姓名 -->
@@ -64,23 +64,36 @@
     <!-- 第二部分：申請資料 -->
 
     <div class="article">
-      <div class="headline">簡歷</div>
-      <div class="content">
+      <div class="headline">個人簡介和申請動機。</div>
+      <div class="content2">
         <ul>
+          <li>
+            <img src="./img/idea.png" alt="Idea" class="listImage2" />申請動機
+          </li>
+          <div class="experience">
+            當時與部門內的實習生使用 Python 執行專案。
+            首先由我使用原本的做法，說明背景、需求與目的，之後和他使用 Python
+            製作。這些專案可以在 Python
+            上使用各類模組執行，無須像之前透過各種程式組合進行資料分析與呈現。Python
+            提供了相當多的解決方式，讓我印象深刻。
+            此外，於工作之餘，我發現了「野球革命」這個網站。該網站對於棒球的熱愛，將棒球數據蒐集、分析與圖表呈現，令人驚艷。
+            這些接觸讓我更想深入鑽研
+            Python，並期許自己也能像「野球革命」一樣，將熱愛的事物透過資料分析呈現給社會大眾。
+          </div>
           <li>
             <img src="./img/SPIL_logo.png" alt="SPIL_logo" class="listImage2" />
             矽品精密工業股份有限公司 ｜ 工業工程工程師 ｜ 2021.05 ~ 2024.10
-
-            <div class="experience_work">
-              3年廠端工業工程經驗，負責 FCBGA、oS 產品的 DB 站（含
-              PP、CA～FC），有 LG～DS 站點經驗。
-              <br />
-              使用工業工程手法於負責站點的資料分析、產能計算與改進、效益評估等。
+            <div class="experience">
+              3年廠端工業工程經驗，使用工業工程手法於負責站點的資料分析、產能計算與改進、效益評估等。
             </div>
           </li>
           <li>
             <img src="./img/NTHU_logo.jpg" alt="HTHU_logo" class="listImage2" />
             國立清華大學 ｜ 工業工程與工程管理研究所 ｜ 2018.08 ~ 2020.08
+            <div class="experience">
+              就學期間使用 Python 與 R
+              統計分析與呈現資料，輔助產學合作方的流程改善。
+            </div>
           </li>
         </ul>
       </div>
