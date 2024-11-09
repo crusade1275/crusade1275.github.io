@@ -8,21 +8,31 @@
     <title>Wehelp 申請書</title>
     <base target="_blank" />
     <link rel="icon" href=".\img\fashion_necktie_pin.png" />
-    <link rel="stylesheet" type="text/css" href="index_css.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- icon8 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- icon8 -->
   </head>
   <body>
     <h1 class="title">Wehelp 申請書</h1>
     <!-- 第一部分：大頭貼與基本資料 -->
     <div class="main_info">
       <!-- 大頭貼 -->
-      <div class="img_css">
+      <figure class="img_css">
         <img
           class="img_block"
           src="./img/Grover.jpg"
           alt="Grover's 大頭貼"
           width="150px"
         />
-      </div>
+      </figure>
       <!-- 姓名與聯絡資訊 -->
       <div class="focus_background">
         <!-- 姓名 -->
@@ -33,28 +43,37 @@
         <div class="focus_info">
           <ul>
             <li>
-              <img
-                src="./img/phone_logo.png"
-                alt="phone_logo"
-                class="listImage"
-              />
-              0912-773-676
+              <figure>
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/office/40/shake-phone.png"
+                  alt="shake-phone"
+                />
+              </figure>
+              <p>0912-773-676</p>
             </li>
             <li>
-              <img
-                src="./img/email_logo.png"
-                alt="email_logo"
-                class="listImage"
-              />
-              cmchiu0923@outlook.com
+              <figure>
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/plasticine/100/new-post--v1.png"
+                  alt="new-post--v1"
+                />
+              </figure>
+              <p>cmchiu0923@outlook.com</p>
             </li>
             <li>
-              <img
-                src="./img/Linkedin_logo.png"
-                alt="Linkedin_logo"
-                class="listImage"
-              />
-              www.linkedin.com/in/chingming-chiu-706286178
+              <figure>
+                <img
+                  width="20"
+                  height="20"
+                  src="https://img.icons8.com/color/48/linkedin.png"
+                  alt="linkedin"
+                />
+              </figure>
+              <p>www.linkedin.com/in/chingming-chiu-706286178</p>
             </li>
           </ul>
         </div>
@@ -64,23 +83,27 @@
     <!-- 第二部分：申請資料 -->
 
     <div class="article">
-      <div class="headline">簡歷</div>
-      <div class="content">
+      <div class="headline">個人簡介和申請動機。</div>
+      <div class="content2">
         <ul>
+          <li>
+            <img src="./img/idea.png" alt="Idea" class="listImage2" />申請動機
+          </li>
+          <div class="experience">學習一技之長，以轉職至日本工作為目標。</div>
           <li>
             <img src="./img/SPIL_logo.png" alt="SPIL_logo" class="listImage2" />
             矽品精密工業股份有限公司 ｜ 工業工程工程師 ｜ 2021.05 ~ 2024.10
-
-            <div class="experience_work">
-              3年廠端工業工程經驗，負責 FCBGA、oS 產品的 DB 站（含
-              PP、CA～FC），有 LG～DS 站點經驗。
-              <br />
-              使用工業工程手法於負責站點的資料分析、產能計算與改進、效益評估等。
+            <div class="experience">
+              3年廠端工業工程經驗，使用工業工程手法於負責站點的資料分析、產能計算與改進、效益評估等。
             </div>
           </li>
           <li>
             <img src="./img/NTHU_logo.jpg" alt="HTHU_logo" class="listImage2" />
             國立清華大學 ｜ 工業工程與工程管理研究所 ｜ 2018.08 ~ 2020.08
+            <div class="experience">
+              就學期間使用 Python 與 R
+              統計分析與呈現資料，輔助產學合作方的流程改善。
+            </div>
           </li>
         </ul>
       </div>
@@ -88,14 +111,26 @@
       <!-- 如果參與這個訓練，會怎麼安排學習時間？ -->
 
       <div class="headline">如果參與這個訓練，會怎麼安排學習時間？</div>
-      <div class="content">目前全職準備轉職，週一至週五</div>
+      <div class="content">
+        <p>全職準備轉職。</p>
+
+        <p>週一至週五：</p>
+
+        <p>週末：</p>
+      </div>
 
       <!-- 軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？ -->
 
       <div class="headline">
         軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？
       </div>
-      <div class="content">根據相關調查結果評估</div>
+      <div class="content">
+        <p>根據相關調查結果評估</p>
+        <ol>
+          <li>相關職缺</li>
+          <li>科技趨勢</li>
+        </ol>
+      </div>
 
       <!-- 請描述一件產生明顯負面情緒的經歷，如何處理該情緒？ -->
 
@@ -112,12 +147,20 @@
       <!-- 如何看待自身工作和整個社會群體的連結關係？ -->
 
       <div class="headline">如何看待自身工作和整個社會群體的連結關係？</div>
-      <div class="content">替這社會</div>
+      <div class="content">
+        <p>野球革命</p>
+        <p>
+          於工作之餘，我發現了「野球革命」這個網站。該網站對於棒球的熱愛，將棒球數據蒐集、分析與圖表呈現，令人驚艷。
+          這接觸讓我更想深入鑽研相關程式技術，並期許自己也能像「野球革命」一樣，將熱愛的事物透過網站或程式分享給社會大眾。
+        </p>
+      </div>
 
       <!-- 其他想要對我們說的事情？ -->
 
       <div class="headline">其他想要對我們說的事情？</div>
-      <div class="content">謝謝 Wehelp。</div>
+      <div class="content">
+        <p>謝謝 Wehelp。</p>
+      </div>
     </div>
     <!-- 完成 -->
   </body>

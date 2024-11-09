@@ -1,5 +1,9 @@
 /* 基本設計 */
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 /*頁面背景*/
 body {
   background-color: white;
@@ -16,8 +20,35 @@ ul {
   vertical-align: middle;
 }
 
-li {
+div.focus_info ul li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+ul li {
   list-style: none;
+}
+
+ol li {
+  margin-left: 1.5rem;
+}
+
+div.focus_info ul li {
+  padding: 0.2rem;
+}
+
+div.focus_info ul li figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 10px;
+  margin: 0px;
+}
+
+div.focus_info ul li p {
+  flex: 10 1 50px;
+  margin: 0px;
 }
 
 .listImage {
@@ -41,6 +72,10 @@ li {
 /*圖片樣式*/
 img {
   align-content: center;
+}
+
+img:hover {
+  cursor: pointer;
 }
 
 .img_block {
@@ -147,7 +182,18 @@ img {
   width: 50%;
   max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
   font-size: 18px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+}
+
+.content2 {
+  margin-bottom: 5px;
+  width: 50%;
+  max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
+  font-size: 18px;
+}
+
+.experience {
+  padding-bottom: 8px;
 }
 
 .keyword {
@@ -196,7 +242,8 @@ img {
   }
 
   /* 文字內容的格式 */
-  .content {
+  .content,
+  .content2 {
     font-size: 16px;
   }
 }
@@ -210,7 +257,8 @@ img {
     max-width: 90%;
   }
 
-  .content {
+  .content,
+  .content2 {
     width: 90%;
     max-width: 90%; /*區塊設定 auto 以應螢幕變化內容*/
   }
