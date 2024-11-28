@@ -90,14 +90,12 @@ div.main_info div.focus_background div.focus_info {
 div.main_info div.focus_background div.focus_info ul li {
   padding: 0.2rem;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
 }
 div.main_info div.focus_background div.focus_info ul li figure {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 1 10px;
   margin: 0.25rem;
 }
 div.main_info div.focus_background div.focus_info ul li figure img {
@@ -105,7 +103,6 @@ div.main_info div.focus_background div.focus_info ul li figure img {
   height: 25px;
 }
 div.main_info div.focus_background div.focus_info ul li p {
-  flex: 10 1 70%;
   margin: 0px;
 }
 
@@ -183,7 +180,7 @@ div.article div.content {
   body div.main_info figure.img_css {
     align-content: center;
   }
-  body div.main_info figure.img_css img {
+  body div.main_info figure.img_css img.img_block {
     width: 200px;
   }
   body div.main_info div.focus_background {
@@ -224,6 +221,10 @@ div.article div.content {
   body div.main_info div.focus_background div.focus_info {
     text-align: center;
   }
+  body div.main_info div.focus_background div.focus_info ul li p {
+    width: 80%;
+    margin: 0px;
+  }
   .headline {
     font-size: 20px;
     width: 90%;
@@ -241,5 +242,43 @@ div.article div.content {
   .mobile_menu {
     text-align: center;
     display: block;
+  }
+}
+/* 手機設計 */
+@media screen and (max-width: 500px) {
+  /* 螢幕寬度小於 500px，套用這區塊的 CSS */
+  body div.main_info {
+    align-items: center;
+    flex-direction: column;
+  }
+  body div.main_info div.focus_background {
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+  }
+  body div.main_info div.focus_background div.focus_name {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  body div.main_info div.focus_background div.focus_job {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  body div.main_info div.focus_background div.focus_info {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  body div.main_info div.focus_background div.focus_info ul li {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  body div.main_info div.focus_background div.focus_info ul li p {
+    text-align: center;
+    width: 100%;
+    margin: 0px;
   }
 }/*# sourceMappingURL=style.css.map */

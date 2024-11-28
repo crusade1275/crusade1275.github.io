@@ -91,13 +91,13 @@ div.main_info {
         li {
           padding: 0.2rem;
           display: flex;
-          flex-wrap: wrap;
+          // flex-wrap: wrap;
           align-items: center;
           figure {
             display: flex;
             justify-content: center;
             align-items: center;
-            flex: 1 1 10px;
+            // flex: 1 1 10px;
             margin: 0.25rem;
             img {
               width: 25px;
@@ -105,7 +105,7 @@ div.main_info {
             }
           }
           p {
-            flex: 10 1 70%;
+            // flex: 10 1 70%;
             margin: 0px;
           }
         }
@@ -207,7 +207,7 @@ div.article {
       figure.img_css {
         // width: 200px;
         align-content: center;
-        img {
+        img.img_block {
           width: 200px;
         }
       }
@@ -255,6 +255,15 @@ div.article {
         align-items: center;
         div.focus_info {
           text-align: center;
+          ul {
+            li {
+              p {
+                //flex: 10 1 30%;
+                width: 80%;
+                margin: 0px;
+              }
+            }
+          }
         }
       }
     }
@@ -278,5 +287,48 @@ div.article {
   .mobile_menu {
     text-align: center;
     display: block;
+  }
+}
+
+/* 手機設計 */
+@media screen and (max-width: 500px) {
+  /* 螢幕寬度小於 500px，套用這區塊的 CSS */
+  body {
+    div.main_info {
+      align-items: center;
+      flex-direction: column;
+      div.focus_background {
+        width: 70vw;
+        align-items: center;
+        justify-content: center;
+        div.focus_name {
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+        }
+        div.focus_job {
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+        }
+        div.focus_info {
+          margin-bottom: 0.5rem;
+          margin-left: 0;
+          ul {
+            li {
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 0;
+              p {
+                text-align: center;
+                width: 100%;
+                margin: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
