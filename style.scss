@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  // line-height: 24px;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+
+/* 首頁標題 */
+h1.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: middle;
+  li {
+    list-style: none;
+    // margin-left: 1.5rem;
+  }
+}
+
+/*介紹用的清單*/
+div.main_info {
+  display: flex;
+  justify-content: center;
+  /*區塊設定 auto 以應螢幕變化內容*/
+  /*圖片用區塊設定*/
+  figure.img_css {
+    width: 20vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    img {
+      width: 200px;
+    }
+  }
+
+  /*內容用的區塊*/
+  div.focus_background {
+    width: 40vw;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    background-color: #b9cfeb;
+    /* 姓名 */
+    div.focus_name {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    /* 職稱 */
+    div.focus_job {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    div.focus_info {
+      margin-bottom: 1rem;
+      margin-left: 1rem;
+      width: auto; /*區塊設定 auto 以應螢幕變化內容*/
+      font-size: 1.5rem;
+      ul {
+        li {
+          padding: 0.2rem;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1 1 10px;
+            margin: 0.25rem;
+          }
+          p {
+            flex: 10 1 70%;
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// .listImage {
+//   margin: 2px;
+//   width: 20px;
+//   height: 20px;
+//   margin-right: 5px;
+//   display: inline-block;
+//   vertical-align: middle;
+// }
+
+img {
+  align-content: center;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+/* 申請書主體 */
+div.article {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+  /* 段落標題 */
+  div.headline {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 70vw;
+    //max-width: 50%;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #b9cfeb;
+  }
+
+  div.content2 {
+    margin-bottom: 5px;
+    width: 70vw;
+    //max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
+    font-size: 1.5rem;
+    ul {
+      div.experience {
+        padding-bottom: 8px;
+      }
+      li {
+        img.listImage2 {
+          margin: 2px;
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        div.experience {
+          padding-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  /* 文字內容的格式 */
+  div.content {
+    margin-bottom: 5px;
+    width: 70vw;
+    // max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+  }
+}
+
+.desktop_menu {
+  text-align: center;
+  display: block;
+}
+
+.mobile_menu {
+  text-align: center;
+  display: none;
+}
+
+/* 平板設計 */
+@media screen and (max-width: 1200px) {
+  /* 螢幕寬度小於 1100px，套用這區塊的 CSS */
+
+  body {
+    div.main_info {
+      flex-wrap: wrap;
+      figure.img_css {
+        //width: 120px;
+        align-content: center;
+      }
+
+      div.focus_background {
+        div.focus_name {
+          font-size: 2.5rem;
+        }
+
+        /* 職稱 */
+        .focus_job {
+          font-size: 1.75rem;
+        }
+
+        /* 聯絡資訊 */
+        .focus_info {
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    div.article {
+      div.headline {
+        font-size: 1.5rem;
+      }
+
+      /* 文字內容的格式 */
+      div.content,
+      .content2 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+/* 手機設計 */
+@media screen and (max-width: 900px) {
+  /* 螢幕寬度小於 500px，套用這區塊的 CSS */
+  body {
+    div.main_info {
+      align-items: center;
+      flex-direction: column;
+      div.focus_background {
+        width: 90%;
+        align-items: center;
+        div.focus_info {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .headline {
+    font-size: 20px;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .content,
+  .content2 {
+    width: 90%;
+    max-width: 90%; /*區塊設定 auto 以應螢幕變化內容*/
+  }
+
+  .desktop_menu {
+    text-align: center;
+    display: none;
+  }
+  .mobile_menu {
+    text-align: center;
+    display: block;
+  }
+}
