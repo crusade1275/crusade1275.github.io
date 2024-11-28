@@ -1,3 +1,5 @@
+$themeColor: rgb(185, 207, 235);
+
 * {
   padding: 0;
   margin: 0;
@@ -49,7 +51,7 @@ div.main_info {
     align-items: center;
     align-content: stretch;
     img {
-      width: 200px;
+      width: 250px;
     }
   }
 
@@ -63,7 +65,8 @@ div.main_info {
     justify-content: center;
     align-items: flex-start;
     align-content: stretch;
-    background-color: #b9cfeb;
+    background-color: $themeColor;
+    border-radius: 30px;
     /* 姓名 */
     div.focus_name {
       margin-top: 1rem;
@@ -96,6 +99,10 @@ div.main_info {
             align-items: center;
             flex: 1 1 10px;
             margin: 0.25rem;
+            img {
+              width: 25px;
+              height: 25px;
+            }
           }
           p {
             flex: 10 1 70%;
@@ -118,7 +125,7 @@ div.main_info {
 
 img {
   align-content: center;
-  :hover {
+  &:hover {
     cursor: pointer;
   }
 }
@@ -198,8 +205,11 @@ div.article {
     div.main_info {
       flex-wrap: wrap;
       figure.img_css {
-        //width: 120px;
+        // width: 200px;
         align-content: center;
+        img {
+          width: 200px;
+        }
       }
 
       div.focus_background {
@@ -241,7 +251,7 @@ div.article {
       align-items: center;
       flex-direction: column;
       div.focus_background {
-        width: 90%;
+        width: 70vw;
         align-items: center;
         div.focus_info {
           text-align: center;

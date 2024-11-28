@@ -7,6 +7,12 @@
     <meta name="author" content="邱景銘，Grover Chiu" />
     <title>Wehelp 申請書</title>
     <base target="_blank" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@299&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href=".\img\fashion_necktie_pin.png" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -26,12 +32,7 @@
     <div class="main_info">
       <!-- 大頭貼 -->
       <figure class="img_css">
-        <img
-          class="img_block"
-          src="./img/Grover.jpg"
-          alt="Grover's 大頭貼"
-          width="150px"
-        />
+        <img class="img_block" src="./img/grover3.png" alt="Grover's 大頭貼" />
       </figure>
       <!-- 姓名與聯絡資訊 -->
       <div class="focus_background">
@@ -45,8 +46,6 @@
             <li>
               <figure>
                 <img
-                  width="20"
-                  height="20"
                   src="https://img.icons8.com/office/40/shake-phone.png"
                   alt="shake-phone"
                 />
@@ -56,8 +55,6 @@
             <li>
               <figure>
                 <img
-                  width="20"
-                  height="20"
                   src="https://img.icons8.com/plasticine/100/new-post--v1.png"
                   alt="new-post--v1"
                 />
@@ -67,8 +64,6 @@
             <li>
               <figure>
                 <img
-                  width="20"
-                  height="20"
                   src="https://img.icons8.com/color/48/linkedin.png"
                   alt="linkedin"
                 />
@@ -89,22 +84,38 @@
           <li>
             <img src="./img/idea.png" alt="Idea" class="listImage2" />申請動機
           </li>
-          <div class="experience">學習一技之長，以轉職至日本工作為目標。</div>
+          <div class="experience">
+            <p>成為軟體工程師，預計到日本工作，並且定居。</p>
+            <p>
+              工業工程工程師基本上為幕僚、管理型的工程師，雖然工作上會使用 VBA
+              或 Tabelau 透過 SQL
+              對公司資料庫下達指令，以利資料擷取及分析，或是製作方便同仁使用的小程式等，但僅止於基本應用。
+            </p>
+            <p>
+              但就因為這些基本應用，不論是自己發想或主管交辦的，開發過程中都讓我感到很有成就感。就算有各種阻礙或需求，也會使我想要開發出更好使用的工具。
+              編寫工具的經驗與時間日積月累，想要成為軟體工程師的念頭油然而生。
+            </p>
+          </div>
           <li>
             <img src="./img/SPIL_logo.png" alt="SPIL_logo" class="listImage2" />
             矽品精密工業股份有限公司 ｜ 工業工程工程師 ｜ 2021.05 ~ 2024.10
-            <div class="experience">
-              3年廠端工業工程經驗，使用工業工程手法於負責站點的資料分析、產能計算與改進、效益評估等。
-            </div>
           </li>
+          <div class="experience">
+            3年工業工程工程師經驗，使用相關手法於工廠的產能優化、產線改善，並對負責站點的資料分析、評估等。
+            <br />
+            過程中會需要寫程式，以利在相關的作業上能更有效率。
+          </div>
+
           <li>
             <img src="./img/NTHU_logo.jpg" alt="HTHU_logo" class="listImage2" />
             國立清華大學 ｜ 工業工程與工程管理研究所 ｜ 2018.08 ~ 2020.08
-            <div class="experience">
-              就學期間使用 Python 與 R
-              統計分析與呈現資料，輔助產學合作方的流程改善。
-            </div>
           </li>
+          <div class="experience">
+            就學期間使用 Python 與 R
+            統計分析與呈現資料，輔助產學合作方的流程改善。 <br />
+            論文：應用 Mask R-CNN
+            訓練物件偵測模型，幫助產學方使用於檢測，提升品質。
+          </div>
         </ul>
       </div>
 
@@ -112,11 +123,17 @@
 
       <div class="headline">如果參與這個訓練，會怎麼安排學習時間？</div>
       <div class="content">
-        <p>全職準備轉職。</p>
+        <p>
+          週一至週五：安排行程同在矽品上班時，每日 08:30 ~ 17:30
+          練習程式語言。包含上基礎課程，解像是 LeetCode
+          的題目（以基礎到中階題目為主），學習並活用。
+        </p>
 
-        <p>週一至週五：</p>
-
-        <p>週末：</p>
+        <p>
+          週末：平日的程式編寫或是解題，以可執行且無 bug
+          為主。到了週末以檢討平日的程式為主（看是不是可以更好），嘗試解進階題目為輔。
+          也會在週末找相關朋友或同好討論程式並學習課程外的新知。
+        </p>
       </div>
 
       <!-- 軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？ -->
@@ -125,10 +142,10 @@
         軟體技術日新月異，如何確定選擇投入的領域是正確有回報的？
       </div>
       <div class="content">
-        <p>根據相關調查結果評估</p>
+        <p>根據相關調查結果，並依據自身需求評估。</p>
         <ol>
-          <li>相關職缺</li>
-          <li>科技趨勢</li>
+          <li>相關職缺：有職缺表示有需求，有需求表示該領域有人投注資源。</li>
+          <li>科技趨勢：大趨勢會導致相關需求誕生，例如 AI。</li>
         </ol>
       </div>
 
@@ -137,21 +154,47 @@
       <div class="headline">
         請描述一件產生明顯負面情緒的經歷，如何處理該情緒？
       </div>
-      <div class="content">於矽品工作時</div>
+      <div class="content">
+        <p>
+          於矽品工作時，因組織變動而有多頭馬車的情況。一份報告會有多位主管回饋，使底下的工程師混亂。而我在初次經歷時也感到不知所措，前期的每次討論，負面情緒不減反增。
+          後來透過剖析問題與經驗抒發相關情緒。
+        </p>
+        <ol>
+          <li>
+            剖析問題：深入研究問題的核心，是預防、解決還是政治操作，調整報告內容。
+          </li>
+          <li>
+            經驗：透過相關信件、需求或之前的報告，找出最高機率是哪位主管會使用，調整成其喜好的模式。
+          </li>
+        </ol>
+
+        <p>
+          待了解這兩項之後，逐漸轉化負面情緒為動力，激勵自己要表現更好給「最高機率是哪位主管」的該主管知道，我所做的東西是可以符合需求的且優於其他工程師的，使該主管替我說話。
+        </p>
+      </div>
 
       <!-- 關於這份申請網頁，分享一個開發時的技術心得。 -->
 
       <div class="headline">關於這份申請網頁，分享一個開發時的技術心得。</div>
-      <div class="content">CSS 與 JS</div>
+      <div class="content">
+        <p>
+          研究所的必修課碰過 HTML、CSS 與
+          PHP，並做出過三個專案。但這次深入學習後發現有很多更專業的方式，像是可以使用
+          Sass 幫助開發，不用像研究所時一步一步更改 CSS 檔。現在可以更快處理 CSS
+          程式碼，像是使用變數，在更改或最佳化程式碼時更方便。
+        </p>
+      </div>
 
       <!-- 如何看待自身工作和整個社會群體的連結關係？ -->
 
       <div class="headline">如何看待自身工作和整個社會群體的連結關係？</div>
       <div class="content">
-        <p>野球革命</p>
+        <p>必須提到【野球革命】團隊。</p>
         <p>
-          於工作之餘，我發現了「野球革命」這個網站。該網站對於棒球的熱愛，將棒球數據蒐集、分析與圖表呈現，令人驚艷。
-          這接觸讓我更想深入鑽研相關程式技術，並期許自己也能像「野球革命」一樣，將熱愛的事物透過網站或程式分享給社會大眾。
+          野球革命建構網站，幕後團隊分析各種棒球數據，讓大眾可以免費使用棒球的基本資料，這些資料可以使球迷討論更加熱絡。更不用說這次棒球十二強賽事，野球革命公告限時免費開放多位國外棒球選手的進階資料，對於社會的貢獻不在話下。
+        </p>
+        <p>
+          有野球革命的示範，更能了解到軟體工程師與社會的連結是互惠互利的。有需求就有供給，進而帶出相關使用。有了更多使用將會創造更多需求，這就是我認為的互惠互利循環。
         </p>
       </div>
 
@@ -159,7 +202,14 @@
 
       <div class="headline">其他想要對我們說的事情？</div>
       <div class="content">
-        <p>謝謝 Wehelp。</p>
+        <p>謝謝 Wehelp 繼續舉辦 bootcamp。</p>
+        <p>
+          在 AppWorks School 宣布停止舉辦免費軟體工程師培訓營，ALPHA Camp 將在
+          2025 停止營運之後，還是繼續舉辦。
+        </p>
+        <p>
+          這兩件事情表示出市場需求飽和的跡象，但如同在第六屆說明會中提到：「網站開發在未來有其存在的價值。」，我認為依然需要這些軟體工程師，才可以支援更多的軟體發展，像是【野球革命】的團隊才會持續誕生。
+        </p>
       </div>
     </div>
     <!-- 完成 -->

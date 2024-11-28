@@ -1,15 +1,24 @@
-/* 基本設計 */
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-/*頁面背景*/
+
 body {
   background-color: white;
   justify-content: center;
   align-items: center;
-  line-height: 24px;
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+
+/* 首頁標題 */
+h1.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 ol,
@@ -19,130 +28,21 @@ ul {
   border: 0;
   vertical-align: middle;
 }
-
-div.focus_info ul li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
+ol li,
 ul li {
   list-style: none;
 }
 
-ol li {
-  margin-left: 1.5rem;
-}
-
-div.focus_info ul li {
-  padding: 0.2rem;
-}
-
-div.focus_info ul li figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: 1 1 10px;
-  margin: 0px;
-}
-
-div.focus_info ul li p {
-  flex: 10 1 50px;
-  margin: 0px;
-}
-
-.listImage {
-  margin: 2px;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.listImage2 {
-  margin: 2px;
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/*圖片樣式*/
-img {
-  align-content: center;
-}
-
-img:hover {
-  cursor: pointer;
-}
-
-.img_block {
-  display: block;
-}
-
-.head_img {
-  width: 120px;
-}
-
-/* 首頁標題 */
-.title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-/* 姓名 */
-.focus_name {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-/* 職稱 */
-.focus_job {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-/* 聯絡資訊 */
-.focus_info {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: auto; /*區塊設定 auto 以應螢幕變化內容*/
-  font-size: 18px;
-}
-
 /*介紹用的清單*/
-.main_info {
+div.main_info {
   display: flex;
   justify-content: center;
   /*區塊設定 auto 以應螢幕變化內容*/
+  /*圖片用區塊設定*/
+  /*內容用的區塊*/
 }
-
-/*內容用的區塊*/
-.focus_background {
-  width: 30%;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: stretch;
-  background-color: #b9cfeb;
-}
-
-/*圖片用區塊設定*/
-.img_css {
-  width: 20%;
+div.main_info figure.img_css {
+  width: 20vw;
   margin: 5px;
   display: flex;
   flex-direction: row;
@@ -151,9 +51,73 @@ img:hover {
   align-items: center;
   align-content: stretch;
 }
+div.main_info figure.img_css img {
+  width: 250px;
+}
+div.main_info div.focus_background {
+  width: 40vw;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+  background-color: rgb(185, 207, 235);
+  border-radius: 30px;
+  /* 姓名 */
+  /* 職稱 */
+}
+div.main_info div.focus_background div.focus_name {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 3rem;
+}
+div.main_info div.focus_background div.focus_job {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+div.main_info div.focus_background div.focus_info {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  width: auto; /*區塊設定 auto 以應螢幕變化內容*/
+  font-size: 1.5rem;
+}
+div.main_info div.focus_background div.focus_info ul li {
+  padding: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+div.main_info div.focus_background div.focus_info ul li figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 10px;
+  margin: 0.25rem;
+}
+div.main_info div.focus_background div.focus_info ul li figure img {
+  width: 25px;
+  height: 25px;
+}
+div.main_info div.focus_background div.focus_info ul li p {
+  flex: 10 1 70%;
+  margin: 0px;
+}
+
+img {
+  align-content: center;
+}
+img:hover {
+  cursor: pointer;
+}
 
 /* 申請書主體 */
-.article {
+div.article {
   margin-top: 5px;
   margin-bottom: 5px;
   display: flex;
@@ -162,43 +126,42 @@ img:hover {
   justify-content: flex-start;
   align-items: center;
   align-content: stretch;
+  /* 段落標題 */
+  /* 文字內容的格式 */
 }
-
-/* 段落標題 */
-.headline {
+div.article div.headline {
   margin-top: 5px;
   margin-bottom: 5px;
   font-weight: bold;
-  font-size: 24px;
-  width: 50%;
-  max-width: 50%;
+  font-size: 2rem;
+  width: 70vw;
   padding-bottom: 8px;
   border-bottom: 2px solid #b9cfeb;
 }
-
-/* 文字內容的格式 */
-.content {
+div.article div.content2 {
   margin-bottom: 5px;
-  width: 50%;
-  max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
-  font-size: 18px;
+  width: 70vw;
+  font-size: 1.5rem;
+}
+div.article div.content2 ul div.experience {
   padding-bottom: 8px;
 }
-
-.content2 {
-  margin-bottom: 5px;
-  width: 50%;
-  max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
-  font-size: 18px;
+div.article div.content2 ul li img.listImage2 {
+  margin: 2px;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
 }
-
-.experience {
+div.article div.content2 ul li div.experience {
   padding-bottom: 8px;
 }
-
-.keyword {
-  color: orange;
-  font-weight: bold;
+div.article div.content {
+  margin-bottom: 5px;
+  width: 70vw;
+  font-size: 1.5rem;
+  padding-bottom: 8px;
 }
 
 .desktop_menu {
@@ -212,66 +175,65 @@ img:hover {
 }
 
 /* 平板設計 */
-@media (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   /* 螢幕寬度小於 1100px，套用這區塊的 CSS */
-  .head_img {
-    width: 120px;
-    align-content: center;
-  }
-
-  .main_info {
+  body div.main_info {
     flex-wrap: wrap;
   }
-
-  .focus_name {
-    font-size: 24px;
+  body div.main_info figure.img_css {
+    align-content: center;
   }
-
-  /* 職稱 */
-  .focus_job {
-    font-size: 20px;
+  body div.main_info figure.img_css img {
+    width: 200px;
   }
-
-  /* 聯絡資訊 */
-  .focus_info {
-    font-size: 16px;
+  body div.main_info div.focus_background {
+    /* 職稱 */
+    /* 聯絡資訊 */
   }
-
-  .headline {
-    font-size: 20px;
+  body div.main_info div.focus_background div.focus_name {
+    font-size: 2.5rem;
   }
-
-  /* 文字內容的格式 */
-  .content,
-  .content2 {
-    font-size: 16px;
+  body div.main_info div.focus_background .focus_job {
+    font-size: 1.75rem;
+  }
+  body div.main_info div.focus_background .focus_info {
+    font-size: 1.25rem;
+  }
+  body div.article {
+    /* 文字內容的格式 */
+  }
+  body div.article div.headline {
+    font-size: 1.5rem;
+  }
+  body div.article div.content,
+  body div.article .content2 {
+    font-size: 1.25rem;
   }
 }
-
 /* 手機設計 */
-@media (max-width: 800px) {
+@media screen and (max-width: 900px) {
   /* 螢幕寬度小於 500px，套用這區塊的 CSS */
+  body div.main_info {
+    align-items: center;
+    flex-direction: column;
+  }
+  body div.main_info div.focus_background {
+    width: 70vw;
+    align-items: center;
+  }
+  body div.main_info div.focus_background div.focus_info {
+    text-align: center;
+  }
   .headline {
     font-size: 20px;
     width: 90%;
     max-width: 90%;
   }
-
   .content,
   .content2 {
     width: 90%;
     max-width: 90%; /*區塊設定 auto 以應螢幕變化內容*/
   }
-
-  .focus_background {
-    width: 90%;
-    align-items: center;
-  }
-
-  .focus_info {
-    text-align: center;
-  }
-
   .desktop_menu {
     text-align: center;
     display: none;
@@ -280,4 +242,4 @@ img:hover {
     text-align: center;
     display: block;
   }
-}
+}/*# sourceMappingURL=style.css.map */
