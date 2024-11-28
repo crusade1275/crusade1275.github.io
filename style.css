@@ -51,7 +51,7 @@ div.main_info figure.img_css {
   align-items: center;
   align-content: stretch;
 }
-div.main_info figure.img_css img {
+div.main_info figure.img_css img.img_block {
   width: 250px;
 }
 div.main_info div.focus_background {
