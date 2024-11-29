@@ -109,7 +109,6 @@ div.main_info div.focus_background div.focus_info ul li p {
 }
 div.main_info div.focus_background div.focus_info ul li p a {
   text-decoration: none;
-  color: black;
 }
 div.main_info div.focus_background div.focus_info ul li p a:hover {
   text-decoration: underline;
@@ -199,6 +198,9 @@ footer p {
 }
 footer p a {
   text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
 }
 
 .desktop_menu {

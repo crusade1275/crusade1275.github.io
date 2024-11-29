@@ -111,7 +111,7 @@ div.main_info {
             margin: 0px;
             a {
               text-decoration: none;
-              color: black;
+
               &:hover {
                 text-decoration: underline;
               }
@@ -220,6 +220,9 @@ footer {
     margin: 0.25rem;
     a {
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
