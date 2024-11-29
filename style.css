@@ -6,6 +6,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -105,18 +107,22 @@ div.main_info div.focus_background div.focus_info ul li figure img {
 div.main_info div.focus_background div.focus_info ul li p {
   margin: 0px;
 }
+div.main_info div.focus_background div.focus_info ul li p a {
+  text-decoration: none;
+  color: black;
+}
+div.main_info div.focus_background div.focus_info ul li p a:hover {
+  text-decoration: underline;
+}
 
 img {
   align-content: center;
 }
-img:hover {
-  cursor: pointer;
-}
 
 /* 申請書主體 */
 div.article {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -133,32 +139,66 @@ div.article div.headline {
   font-size: 2rem;
   width: 70vw;
   padding-bottom: 8px;
-  border-bottom: 2px solid #b9cfeb;
+  border-bottom: 3px solid rgb(185, 207, 235);
 }
 div.article div.content2 {
   margin-bottom: 5px;
   width: 70vw;
   font-size: 1.5rem;
 }
-div.article div.content2 ul div.experience {
-  padding-bottom: 8px;
+div.article div.content2 header {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
 }
-div.article div.content2 ul li img.listImage2 {
-  margin: 2px;
+div.article div.content2 header figure img.listImage2 {
   width: 30px;
   height: 30px;
-  margin-right: 5px;
   display: inline-block;
   vertical-align: middle;
 }
-div.article div.content2 ul li div.experience {
-  padding-bottom: 8px;
+div.article div.content2 header div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+div.article div.content2 header div p {
+  margin-left: 1rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2rem;
+}
+div.article div.content2 div.experience p {
+  margin-bottom: 0.25rem;
 }
 div.article div.content {
-  margin-bottom: 5px;
   width: 70vw;
   font-size: 1.5rem;
-  padding-bottom: 8px;
+}
+div.article div.content ol li {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+div.article div.content p {
+  margin-bottom: 0.25rem;
+}
+
+/* FOOTER */
+footer {
+  width: 70vw;
+  background-color: rgb(185, 207, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  margin: 0.25rem;
+}
+footer p a {
+  text-decoration: none;
 }
 
 .desktop_menu {

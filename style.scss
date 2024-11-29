@@ -7,6 +7,8 @@ $themeColor: rgb(185, 207, 235);
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -107,6 +109,13 @@ div.main_info {
           p {
             // flex: 10 1 70%;
             margin: 0px;
+            a {
+              text-decoration: none;
+              color: black;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
@@ -114,26 +123,14 @@ div.main_info {
   }
 }
 
-// .listImage {
-//   margin: 2px;
-//   width: 20px;
-//   height: 20px;
-//   margin-right: 5px;
-//   display: inline-block;
-//   vertical-align: middle;
-// }
-
 img {
   align-content: center;
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 /* 申請書主體 */
 div.article {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -147,43 +144,83 @@ div.article {
     font-weight: bold;
     font-size: 2rem;
     width: 70vw;
-    //max-width: 50%;
     padding-bottom: 8px;
-    border-bottom: 2px solid #b9cfeb;
+    border-bottom: 3px solid $themeColor;
   }
 
   div.content2 {
     margin-bottom: 5px;
     width: 70vw;
-    //max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
     font-size: 1.5rem;
-    ul {
-      div.experience {
-        padding-bottom: 8px;
-      }
-      li {
+
+    header {
+      display: flex;
+
+      align-items: center;
+      margin-top: 0.5rem;
+      margin-bottom: 0.25rem;
+      figure {
         img.listImage2 {
-          margin: 2px;
           width: 30px;
           height: 30px;
-          margin-right: 5px;
           display: inline-block;
           vertical-align: middle;
         }
-        div.experience {
-          padding-bottom: 8px;
+      }
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        p {
+          margin-left: 1rem;
+          text-align: center;
+          font-weight: bold;
+          line-height: 2rem;
         }
+      }
+    }
+    div.experience {
+      p {
+        margin-bottom: 0.25rem;
       }
     }
   }
 
   /* 文字內容的格式 */
   div.content {
-    margin-bottom: 5px;
     width: 70vw;
     // max-width: 50%; /*區塊設定 auto 以應螢幕變化內容*/
     font-size: 1.5rem;
-    padding-bottom: 8px;
+
+    ol {
+      li {
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        //list-style-position: inside;
+        list-style-type: disc;
+      }
+    }
+    p {
+      margin-bottom: 0.25rem;
+    }
+  }
+}
+
+/* FOOTER */
+footer {
+  width: 70vw;
+  background-color: $themeColor;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0.25rem;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
