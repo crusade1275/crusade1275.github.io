@@ -289,6 +289,9 @@ footer p a:hover {
 /* 手機設計 */
 @media screen and (max-width: 500px) {
   /* 螢幕寬度小於 500px，套用這區塊的 CSS */
+  body h1.title {
+    font-size: 2.5rem;
+  }
   body div.main_info {
     align-items: center;
     flex-direction: column;
@@ -302,11 +305,13 @@ footer p a:hover {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
+    font-size: 2rem;
   }
   body div.main_info div.focus_background div.focus_job {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
+    font-size: 1.5rem;
   }
   body div.main_info div.focus_background div.focus_info {
     margin-bottom: 0.5rem;
@@ -322,5 +327,13 @@ footer p a:hover {
     text-align: center;
     width: 100%;
     margin: 0px;
+    font-size: 1rem;
+  }
+  body div.article div.content2 header div p {
+    text-align: start;
+    font-size: 1rem;
+  }
+  body footer {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
